@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ArrowUpRight, FileText, X } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
+import TiltCard from '../TiltCard/TiltCard';
 import styles from './Projects.module.css';
 
 // Removed static projects array
@@ -67,14 +68,19 @@ export default function Projects() {
             const isFeatured = idx === 0 || idx === 3;
             
             return (
-              <motion.div 
+              <TiltCard 
                 key={idx} 
                 className={`${styles.bentoCard} ${isFeatured ? styles.featured : ''}`}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-50px" }}
-                transition={{ duration: 0.6, ease: "easeOut", delay: idx * 0.1 }}
+                intensity={8}
               >
+                <motion.div
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, margin: "-50px" }}
+                  transition={{ duration: 0.6, ease: "easeOut", delay: idx * 0.1 }}
+                  style={{ display: 'flex', flexDirection: isFeatured ? 'row' : 'column', gap: '3rem', height: '100%', width: '100%', alignItems: isFeatured ? 'center' : 'stretch' }}
+                  className={styles.bentoCardInner}
+                >
                 
                 {/* Content Side */}
                 <div className={styles.contentSide}>
@@ -108,8 +114,8 @@ export default function Projects() {
                 <div className={styles.imageSide}>
                   {project.abstractIcon}
                 </div>
-
               </motion.div>
+              </TiltCard>
             );
           })}
         </div>

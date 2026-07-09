@@ -1,47 +1,36 @@
-import { useState, useRef, type MouseEvent } from 'react';
-import { ArrowRight, X } from 'lucide-react';
+import { useState } from 'react';
+import { ChevronRight, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
   LineChart, Line, BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer
 } from 'recharts';
 import { useTranslation } from 'react-i18next';
+import TiltCard from '../TiltCard/TiltCard';
 import styles from './Insights.module.css';
 import { insightsData, type InsightPost } from '../../data/insightsData';
 
 function InsightCard({ post, onClick }: { post: InsightPost; onClick: (post: InsightPost) => void }) {
-  const ref = useRef<HTMLDivElement>(null);
-
-  const handleMouseMove = (e: MouseEvent<HTMLDivElement>) => {
-    if (!ref.current) return;
-    const rect = ref.current.getBoundingClientRect();
-    const x = e.clientX - rect.left;
-    const y = e.clientY - rect.top;
-    ref.current.style.setProperty('--mouse-x', `${x}px`);
-    ref.current.style.setProperty('--mouse-y', `${y}px`);
-  };
-
   return (
-    <motion.div
-      ref={ref}
-      onMouseMove={handleMouseMove}
-      className={styles.card}
-      onClick={() => onClick(post)}
-      initial={{ opacity: 0, y: 20 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
-      transition={{ duration: 0.5 }}
-    >
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-        <span className={styles.tag}>{post.tag}</span>
-        <span className={styles.date}>{post.date}</span>
-      </div>
-      <h3 className={styles.cardTitle}>{post.title}</h3>
-      <p className={styles.cardSummary}>{post.summary}</p>
-      <div className={styles.readMore}>
-        {/* Placeholder text, normally translated too */}
-        Leer Análisis <ArrowRight size={18} />
-      </div>
-    </motion.div>
+    <TiltCard intensity={10} className={styles.cardWrapper}>
+      <motion.div
+        className={styles.card}
+        onClick={() => onClick(post)}
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5 }}
+      >
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+          <span className={styles.tag}>{post.tag}</span>
+          <span className={styles.date}>{post.date}</span>
+        </div>
+        <h3 className={styles.cardTitle}>{post.title}</h3>
+        <p className={styles.cardSummary}>{post.summary}</p>
+        <div className={styles.readMore}>
+          Leer Análisis <ChevronRight size={18} />
+        </div>
+      </motion.div>
+    </TiltCard>
   );
 }
 

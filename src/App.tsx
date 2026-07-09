@@ -14,6 +14,7 @@ import ContactForm from './components/ContactForm/ContactForm';
 import DragonParticles from './components/DragonParticles/DragonParticles';
 import LanguageSwitcher from './components/LanguageSwitcher/LanguageSwitcher';
 import Cursor from './components/Cursor/Cursor';
+import BackgroundGlow from './components/BackgroundGlow/BackgroundGlow';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <Cursor />
       <LanguageSwitcher />
       <DragonParticles />
+      <BackgroundGlow />
       <main style={{ position: 'relative', zIndex: 1 }}>
         <Hero />
         <CoreValues />
