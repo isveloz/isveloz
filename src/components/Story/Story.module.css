@@ -307,8 +307,17 @@
 
 @media (max-width: 768px) {
   .chapter {
-    min-width: 320px;
-    max-width: 320px;
+    min-width: 280px;
+    max-width: 280px;
     height: 900px;
+  }
+  .chapterContent {
+    padding: 1.5rem;
+  }
+  .chapterTitle {
+    font-size: 1.4rem;
+  }
+  .chapterText {
+    font-size: 0.95rem;
   }
 }

@@ -134,10 +134,24 @@
 @media (max-width: 768px) {
   .heroContainer {
     padding: 1rem;
-    min-height: 90vh;
+    min-height: 85vh;
   }
   .imageWrapper {
     width: 140px;
     height: 140px;
+  }
+  .title {
+    font-size: clamp(2.5rem, 12vw, 4rem);
+  }
+  .subtitle {
+    font-size: 1.05rem;
+    padding: 0 1rem;
+  }
+  .socialLinks {
+    gap: 1rem;
+  }
+  .socialIcon {
+    width: 48px;
+    height: 48px;
   }
 }
