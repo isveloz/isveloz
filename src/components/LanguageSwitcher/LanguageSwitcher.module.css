@@ -1,0 +1,43 @@
+.container {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 100;
+}
+
+.selector {
+  appearance: none;
+  background-color: var(--bg-card);
+  color: var(--text-primary);
+  border: var(--glass-border);
+  padding: 0.75rem 2.5rem 0.75rem 1rem;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+.selector:hover, .selector:focus {
+  background-color: var(--bg-card-hover);
+  border: var(--glass-border-hover);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.6), var(--neon-glow);
+}
+
+.icon {
+  position: absolute;
+  right: 0.8rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-secondary);
+  pointer-events: none;
+}
+
+.selector option {
+  background-color: var(--bg-dark);
+  color: var(--text-primary);
+}

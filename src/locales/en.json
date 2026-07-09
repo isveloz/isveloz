@@ -1,0 +1,102 @@
+{
+  "hero": {
+    "title1": "Isaias",
+    "title2": "Veloz",
+    "subtitle": "Digital Analytics Consultant & Data Engineer"
+  },
+  "nav": {
+    "projects": "Projects",
+    "skills": "Skills",
+    "insights": "Blog",
+    "contact": "Contact"
+  },
+  "coreValues": {
+    "title": "Core Values",
+    "val1_title": "Precision",
+    "val1_desc": "Data accuracy is non-negotiable. Every metric tells a real story.",
+    "val2_title": "Adaptability",
+    "val2_desc": "The digital ecosystem mutates. Evolving fast is the only constant.",
+    "val3_title": "Transparency",
+    "val3_desc": "Clear communication. Clean code. Dashboards that don't hide the truth."
+  },
+  "story": {
+    "ch1_title": "The Starting Point",
+    "ch1_sub": "Sótero del Río Hospital (2001)",
+    "ch1_txt": "Born in 2001 in Puente Alto, Chile. Growing up in this peripheral area was my first indirect contact with structural inequality.",
+    "ch2_title": "Roots in the Community",
+    "ch2_sub": "La Pintana & Local Commerce",
+    "ch2_txt": "Working at the local market, I understood economics from its most human base, sparking my interest in macroeconomic variables.",
+    "ch3_title": "The Value of Service",
+    "ch3_sub": "Customer Service",
+    "ch3_txt": "Working in retail taught me that quality and human connection reside in the details. I understood the daily operations of massive companies.",
+    "ch4_title": "Studies and Engineering",
+    "ch4_sub": "DUOC UC (2022-2025)",
+    "ch4_txt": "Studying Software Engineering allowed me to merge my interest in social impact with technology, solving systemic inequalities with cloud architecture.",
+    "ch5_title": "The Leap to Data",
+    "ch5_sub": "Democratizing Information",
+    "ch5_txt": "I dove into Python, Power BI, and AI. My goal is to transform access to information so economic understanding is no longer a privilege.",
+    "ch6_title": "Banco Falabella",
+    "ch6_sub": "Digital Analytics Consultant (Aug 2025 - Nov 2025)",
+    "ch6_txt": "E2E automation development with Python & SQL. Created 'AI Copilot', an LLM agent designed to democratize access to metrics with 90% effectiveness."
+  },
+  "projects": {
+    "title": "Featured Projects",
+    "btn": "View Project",
+    "p1_sub": "Supply Chain Management (SCM)",
+    "p1_txt": "Modular and integral platform for ground logistics management. Includes route optimization and real-time control tower to reduce costs.",
+    "p2_sub": "Emotional Wellness App",
+    "p2_txt": "Mental health project integrating an emotional diary and qualitative analysis using conversational AI and NLP.",
+    "p3_sub": "High-Performance E-Commerce",
+    "p3_txt": "Development of a modern online catalog and store, including abandoned cart recovery and fast user experience.",
+    "p4_txt": "Deep research focused on social dynamics, data crossing, and qualitative analysis combining rigor and empathy."
+  },
+  "insights": {
+    "title1": "Blog of",
+    "title2": "Economy, Business & Tech"
+  },
+  "contact": {
+    "title": "Let's Talk?",
+    "subtitle": "I'm always open to discussing new projects, automation ideas, or just grabbing a virtual coffee.",
+    "btn": "Send Email",
+    "form": {
+      "name": "Name",
+      "namePH": "E.g. John Doe",
+      "email": "Email",
+      "emailPH": "john@example.com",
+      "msg": "Message",
+      "msgPH": "Hi! I'd like to talk about...",
+      "send": "Send Message",
+      "sending": "Sending...",
+      "sent": "Sent!"
+    }
+  },
+  "vision": {
+    "title": "Understanding the Ecosystem",
+    "text": "For me, programming and data are not ends in themselves, but the most powerful tools to analyze and propose large-scale solutions. My long-term professional goal is driven by a deep desire to understand and influence real-world dynamics.",
+    "n1": "Macroeconomics",
+    "n1_desc": "Analysis of economic cycles, wealth distribution, and how data reflects global financial engines.",
+    "n2": "Social Dynamics",
+    "n2_desc": "Understanding collective human behavior, demographic trends, and the impact of technology on society.",
+    "n3": "Public Policy",
+    "n3_desc": "Development of data-driven technological solutions designed to support decision-making and civil well-being."
+  },
+  "tastes": {
+    "title": "Gastronomy & Little Pleasures",
+    "t1_desc": "My favorite cuisine, where simplicity and quality ingredients are everything.",
+    "t2_desc": "The perfect fuel for long hours of data analysis and programming.",
+    "t3_desc": "My favorite fruit. A fresh and sour touch that balances any time of day."
+  },
+  "extras": {
+    "title": "Beyond the code",
+    "lib_title": "My Library",
+    "lib_desc": "Special mention for having my collection of Papelucho volumes again.",
+    "cine_title": "Cinema & Television",
+    "music_title": "Spotify Jukebox",
+    "music_desc": "Curated selection. Play directly here.",
+    "minds_title": "Minds & References"
+  },
+  "gallery": {
+    "title": "My Lens & Environment",
+    "desc": "A small visual collection documenting my passion for photography, design, and my surroundings."
+  }
+}

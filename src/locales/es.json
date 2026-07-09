@@ -1,0 +1,102 @@
+{
+  "hero": {
+    "title1": "Isaías",
+    "title2": "Veloz",
+    "subtitle": "Digital Analytics Consultant & Data Engineer"
+  },
+  "nav": {
+    "projects": "Proyectos",
+    "skills": "Habilidades",
+    "insights": "Blog",
+    "contact": "Contacto"
+  },
+  "coreValues": {
+    "title": "Principios Nucleares",
+    "val1_title": "Precisión",
+    "val1_desc": "La exactitud en los datos no es negociable. Cada métrica cuenta una historia real.",
+    "val2_title": "Adaptabilidad",
+    "val2_desc": "El ecosistema digital muta. Evolucionar rápido es la única constante.",
+    "val3_title": "Transparencia",
+    "val3_desc": "Comunicación clara. Código limpio. Dashboards que no esconden la realidad."
+  },
+  "story": {
+    "ch1_title": "El Punto de Partida",
+    "ch1_sub": "Hospital Sótero del Río (2001)",
+    "ch1_txt": "Nací en 2001 en el Hospital Dr. Sótero del Río, Puente Alto. Este complejo asistencial atiende a una de las poblaciones más densas de Chile. Crecer en esta área periférica fue mi primer contacto indirecto con la desigualdad estructural.",
+    "ch2_title": "Raíces en la Población",
+    "ch2_sub": "La Pintana y el Comercio Local",
+    "ch2_txt": "Mi visión del mundo se forjó en la Población Santo Tomás. Trabajando en la feria, entendí la economía desde su base más humana. Pude ver cómo la falta de integración urbana limita el progreso, despertando mi interés por las variables macroeconómicas.",
+    "ch3_title": "El Valor del Servicio",
+    "ch3_sub": "Atención al Cliente",
+    "ch3_txt": "Al pasar por empresas de retail y servicio, aprendí que la calidad y la conexión humana residen en los detalles. Comprendí las operaciones diarias de empresas masivas y cómo el capital humano sostiene sus estructuras.",
+    "ch4_title": "Estudios e Ingeniería",
+    "ch4_sub": "DUOC UC (2022-2025)",
+    "ch4_txt": "Decidí formalizar mi pasión estudiando Ingeniería en Informática. Allí, mi interés por el impacto social y la tecnología se fusionaron, preparándome para abordar problemas estructurales con arquitectura en la nube.",
+    "ch5_title": "El Salto a los Datos",
+    "ch5_sub": "Democratizando la Información",
+    "ch5_txt": "Me sumergí en Python, Power BI e IA, descubriendo que los datos exponen las fallas macroeconómicas invisibles. Mi objetivo es transformar el acceso a la información para que el entendimiento económico deje de ser un privilegio.",
+    "ch6_title": "Banco Falabella Financiero",
+    "ch6_sub": "Digital Analytics Consultant (Ago 2025 - Nov 2025)",
+    "ch6_txt": "Desarrollo de automatización ETE con Python y SQL. Implementación del Dashboard Corporativo Regional. Desarrollé 'IA Copilot', un agente LLM diseñado para democratizar el acceso a métricas, logrando un 90% de efectividad."
+  },
+  "projects": {
+    "title": "Proyectos Destacados",
+    "btn": "Ver Proyecto",
+    "p1_sub": "Supply Chain Management (SCM)",
+    "p1_txt": "Plataforma modular e integral para la gestión logística terrestre. Incluye optimización de rutas, torre de control en tiempo real y analítica avanzada, orientada a reducir costos operativos.",
+    "p2_sub": "Aplicación de Bienestar Emocional",
+    "p2_txt": "Proyecto enfocado en la salud mental que integra un diario emocional y análisis de información cualitativa. Combina IA conversacional (LLMs) y NLP para generar insights.",
+    "p3_sub": "E-Commerce de Alto Rendimiento",
+    "p3_txt": "Desarrollo de catálogo y tienda online moderna. Implementación de recuperación de carritos abandonados y gestión dinámica de productos, garantizando una experiencia fluida.",
+    "p4_txt": "Investigación profunda enfocada en dinámicas sociales, cruce de datos y análisis cualitativo. Combina rigurosidad analítica y empatía humana para desentrañar fenómenos complejos."
+  },
+  "insights": {
+    "title1": "Blog de",
+    "title2": "Economía, Negocios y Tech"
+  },
+  "contact": {
+    "title": "¿Hablamos?",
+    "subtitle": "Siempre estoy abierto a discutir nuevos proyectos, ideas de automatización o simplemente tomar un café virtual.",
+    "btn": "Enviar Correo",
+    "form": {
+      "name": "Nombre",
+      "namePH": "Ej. Juan Pérez",
+      "email": "Email",
+      "emailPH": "juan@ejemplo.com",
+      "msg": "Mensaje",
+      "msgPH": "¡Hola! Me gustaría hablar sobre...",
+      "send": "Enviar Mensaje",
+      "sending": "Enviando...",
+      "sent": "¡Enviado!"
+    }
+  },
+  "vision": {
+    "title": "Entendiendo el Ecosistema",
+    "text": "Para mí, la programación y los datos no son un fin en sí mismo, sino la herramienta más poderosa para analizar y proponer soluciones a gran escala. Mi meta profesional a largo plazo está impulsada por un profundo deseo de comprender e incidir en las dinámicas del mundo real.",
+    "n1": "Macroeconomía",
+    "n1_desc": "Análisis de ciclos económicos, distribución de riqueza y cómo los datos reflejan los motores financieros a escala global.",
+    "n2": "Dinámicas Sociales",
+    "n2_desc": "Comprensión del comportamiento humano colectivo, tendencias demográficas y el impacto de la tecnología en la sociedad.",
+    "n3": "Política Pública",
+    "n3_desc": "Desarrollo de soluciones tecnológicas orientadas a respaldar la toma de decisiones y el bienestar civil mediante datos."
+  },
+  "tastes": {
+    "title": "Gastronomía & Pequeños Placeres",
+    "t1_desc": "Mi gastronomía predilecta, donde la simplicidad y los ingredientes de calidad lo son todo.",
+    "t2_desc": "El combustible perfecto para las largas horas de análisis de datos y programación.",
+    "t3_desc": "Mi fruta favorita. Un toque ácido y fresco que equilibra cualquier momento del día."
+  },
+  "extras": {
+    "title": "Más allá del código",
+    "lib_title": "Mi Biblioteca",
+    "lib_desc": "Mención especial por volver a tener mi colección de los tomos de Papelucho.",
+    "cine_title": "Cine y Televisión",
+    "music_title": "La Rocola de Spotify",
+    "music_desc": "Selección curada. Reproduce directamente aquí.",
+    "minds_title": "Mentes & Referentes"
+  },
+  "gallery": {
+    "title": "Mi Lente y Entorno",
+    "desc": "Una pequeña colección visual que documenta mi pasión por la fotografía, el diseño y mi entorno."
+  }
+}

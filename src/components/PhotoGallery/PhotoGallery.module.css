@@ -1,0 +1,80 @@
+.galleryContainer {
+  margin: 4rem 0;
+  position: relative;
+  z-index: 10;
+}
+
+.title {
+  text-align: center;
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  text-align: center;
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto 4rem;
+}
+
+.masonryGrid {
+  column-count: 1;
+  column-gap: 1.5rem;
+}
+
+@media (min-width: 600px) {
+  .masonryGrid { column-count: 2; }
+}
+
+@media (min-width: 900px) {
+  .masonryGrid { column-count: 3; }
+}
+
+.photoCard {
+  break-inside: avoid;
+  margin-bottom: 1.5rem;
+  border-radius: 20px;
+  overflow: hidden;
+  background: var(--bg-card);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: var(--glass-border);
+  position: relative;
+  box-shadow: var(--glass-shadow), var(--glass-highlight);
+  transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.photoCard:hover {
+  transform: translateY(-6px) scale(1.02);
+  background: var(--bg-card-hover);
+  border: var(--glass-border-hover);
+  box-shadow: var(--glass-shadow), var(--glass-highlight), var(--neon-glow);
+}
+
+.photoCard img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  filter: contrast(1.1) brightness(0.85) grayscale(20%);
+  transition: filter 0.6s cubic-bezier(0.16, 1, 0.3, 1), transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.photoCard:hover img {
+  filter: contrast(1) brightness(1.1) grayscale(0%);
+  transform: scale(1.05);
+}
+
+@media (max-width: 900px) {
+  .masonryGrid {
+    column-count: 2;
+  }
+}
+
+@media (max-width: 600px) {
+  .masonryGrid {
+    column-count: 1;
+  }
+}

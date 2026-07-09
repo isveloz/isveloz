@@ -1,0 +1,208 @@
+.insightsContainer {
+  padding: 8rem 0;
+  position: relative;
+  z-index: 10;
+}
+
+.title {
+  text-align: center;
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  color: var(--text-primary);
+  margin-bottom: 4rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 3rem;
+}
+
+.card {
+  background: var(--bg-card);
+  border: var(--glass-border);
+  border-radius: 20px;
+  padding: 2.5rem;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+  transition: all 0.4s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: radial-gradient(800px circle at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(139, 92, 246, 0.1), transparent 40%);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  pointer-events: none;
+}
+
+.card:hover::before {
+  opacity: 1;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--neon-glow);
+  border: var(--glass-border-hover);
+  background: var(--bg-card-hover);
+}
+
+.tag {
+  align-self: flex-start;
+  background: rgba(6, 182, 212, 0.15);
+  border: 1px solid rgba(6, 182, 212, 0.3);
+  color: #06b6d4;
+  padding: 0.4rem 1rem;
+  border-radius: 50px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.date {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.cardTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1.3;
+}
+
+.cardSummary {
+  color: #e2e8f0;
+  line-height: 1.6;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.readMore {
+  margin-top: auto;
+  color: var(--accent-primary);
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: gap 0.3s ease;
+}
+
+.card:hover .readMore {
+  gap: 0.8rem;
+}
+
+/* Modal Styles */
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.modalContent {
+  background: var(--bg-dark);
+  border: var(--glass-border);
+  border-radius: 24px;
+  width: 100%;
+  max-width: 900px;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  box-shadow: 0 25px 50px rgba(0,0,0,0.5), 0 0 40px rgba(139, 92, 246, 0.2);
+}
+
+.closeBtn {
+  position: sticky;
+  top: 1.5rem;
+  left: 100%;
+  margin-right: 1.5rem;
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 10;
+  transform: translateX(-1.5rem);
+}
+
+.closeBtn:hover {
+  background: rgba(236, 72, 153, 0.5);
+  transform: translateX(-1.5rem) scale(1.1);
+}
+
+.modalBody {
+  padding: 0 3rem 4rem 3rem;
+  margin-top: -20px;
+}
+
+.modalHeader {
+  margin-bottom: 2rem;
+}
+
+.modalTitle {
+  font-size: 2.5rem;
+  color: var(--text-primary);
+  margin: 1rem 0;
+  line-height: 1.2;
+}
+
+.modalText {
+  color: var(--text-secondary);
+  font-size: 1.15rem;
+  line-height: 1.8;
+  margin-bottom: 3rem;
+  white-space: pre-line;
+}
+
+.chartContainer {
+  background: var(--bg-card);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  padding: 2rem;
+  height: 400px;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .modalBody {
+    padding: 0 1.5rem 3rem 1.5rem;
+  }
+  .modalTitle {
+    font-size: 2rem;
+  }
+  .chartContainer {
+    padding: 1rem;
+    height: 300px;
+  }
+  .closeBtn {
+    transform: translateX(-0.5rem);
+  }
+  .closeBtn:hover {
+    transform: translateX(-0.5rem) scale(1.1);
+  }
+}
