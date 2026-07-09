@@ -24,11 +24,13 @@
   transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.sectionBlock:hover {
-  transform: translateY(-4px);
-  background: var(--bg-card-hover);
-  border: var(--glass-border-hover);
-  box-shadow: var(--glass-shadow), var(--glass-highlight), var(--neon-glow);
+@media (hover: hover) and (pointer: fine) {
+  .sectionBlock:hover {
+    transform: translateY(-4px);
+    background: var(--bg-card-hover);
+    border: var(--glass-border-hover);
+    box-shadow: var(--glass-shadow), var(--glass-highlight), var(--neon-glow);
+  }
 }
 
 .sectionTitle {
@@ -75,10 +77,12 @@
   transition: transform 0.3s ease;
 }
 
-.bookCard:hover .bookCover {
-  transform: translateY(-8px);
-  box-shadow: var(--neon-glow);
-  border: 1px solid var(--accent-primary);
+@media (hover: hover) and (pointer: fine) {
+  .bookCard:hover .bookCover {
+    transform: translateY(-8px);
+    box-shadow: var(--neon-glow);
+    border: 1px solid var(--accent-primary);
+  }
 }
 
 .bookTitle {
@@ -113,11 +117,13 @@
   color: var(--text-primary);
 }
 
-.musicPlayerCard:hover {
-  transform: translateY(-5px) scale(1.02);
-  background: var(--bg-card-hover);
-  border-color: rgba(255, 255, 255, 0.2);
-  box-shadow: 0 10px 30px rgba(0,0,0,0.5), var(--neon-glow);
+@media (hover: hover) and (pointer: fine) {
+  .musicPlayerCard:hover {
+    transform: translateY(-5px) scale(1.02);
+    background: var(--bg-card-hover);
+    border-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5), var(--neon-glow);
+  }
 }
 
 .albumArt {
@@ -202,9 +208,11 @@
   transition: all 0.3s ease;
 }
 
-.musicPlayerCard:hover .spotifyLogo {
-  opacity: 1;
-  transform: scale(1.1);
+@media (hover: hover) and (pointer: fine) {
+  .musicPlayerCard:hover .spotifyLogo {
+    opacity: 1;
+    transform: scale(1.1);
+  }
 }
 
 @keyframes spinSlow {
@@ -244,11 +252,13 @@
   border: 4px solid rgba(255, 255, 255, 0.1);
 }
 
-.mindCard:hover .mindPhoto {
-  filter: grayscale(0%);
-  transform: scale(1.1);
-  border-color: var(--accent-cyan);
-  box-shadow: var(--neon-glow-cyan);
+@media (hover: hover) and (pointer: fine) {
+  .mindCard:hover .mindPhoto {
+    filter: grayscale(0%);
+    transform: scale(1.1);
+    border-color: var(--accent-cyan);
+    box-shadow: var(--neon-glow-cyan);
+  }
 }
 
 .mindName {

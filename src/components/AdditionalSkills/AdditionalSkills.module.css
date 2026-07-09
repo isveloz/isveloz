@@ -26,18 +26,20 @@
 .column {
   background: var(--bg-card);
   border: var(--glass-border);
-  border-radius: 16px;
-  padding: 3rem 2rem;
+  border-radius: 20px;
+  padding: clamp(2rem, 3vw, 3rem) clamp(1.5rem, 2vw, 2.5rem);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   transition: all 0.4s ease;
   box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
 }
 
-.column:hover {
-  transform: translateY(-5px);
-  box-shadow: var(--neon-glow);
-  border-color: rgba(138, 43, 226, 0.4);
+@media (hover: hover) and (pointer: fine) {
+  .column:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--neon-glow);
+    border-color: rgba(138, 43, 226, 0.4);
+  }
 }
 
 .colHeader {
@@ -94,5 +96,13 @@
 @media (max-width: 768px) {
   .columns {
     grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .listItem {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .itemValue {
+    align-self: flex-start;
   }
 }

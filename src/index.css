@@ -114,11 +114,14 @@ button {
   will-change: transform, box-shadow;
 }
 
-.glass-panel:hover {
-  background: var(--bg-card-hover);
-  border: var(--glass-border-hover);
-  box-shadow: var(--glass-shadow), var(--glass-highlight), var(--neon-glow);
-  transform: translateY(-4px);
+/* Only apply hover effects on devices with a mouse/pointer to prevent sticky hovers on touch */
+@media (hover: hover) and (pointer: fine) {
+  .glass-panel:hover {
+    background: var(--bg-card-hover);
+    border: var(--glass-border-hover);
+    box-shadow: var(--glass-shadow), var(--glass-highlight), var(--neon-glow);
+    transform: translateY(-4px);
+  }
 }
 
 .text-gradient {
@@ -157,19 +160,15 @@ button {
   color: #fff;
 }
 
-/* Container */
+/* Container - Fluid padding */
 .container {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 0 clamp(1.25rem, 5vw, 2.5rem);
 }
 
 @media (max-width: 768px) {
-  .container {
-    padding: 0 1rem;
-  }
-  
   /* Disable custom cursor on touch devices to prevent conflicts */
   body, a, button {
     cursor: auto !important;

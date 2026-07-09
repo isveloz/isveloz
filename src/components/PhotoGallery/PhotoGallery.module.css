@@ -46,11 +46,13 @@
   transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.photoCard:hover {
-  transform: translateY(-6px) scale(1.02);
-  background: var(--bg-card-hover);
-  border: var(--glass-border-hover);
-  box-shadow: var(--glass-shadow), var(--glass-highlight), var(--neon-glow);
+@media (hover: hover) and (pointer: fine) {
+  .photoCard:hover {
+    transform: translateY(-6px) scale(1.02);
+    background: var(--bg-card-hover);
+    border: var(--glass-border-hover);
+    box-shadow: var(--glass-shadow), var(--glass-highlight), var(--neon-glow);
+  }
 }
 
 .photoCard img {
@@ -62,9 +64,11 @@
   transition: filter 0.6s cubic-bezier(0.16, 1, 0.3, 1), transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.photoCard:hover img {
-  filter: contrast(1) brightness(1.1) grayscale(0%);
-  transform: scale(1.05);
+@media (hover: hover) and (pointer: fine) {
+  .photoCard:hover img {
+    filter: contrast(1) brightness(1.1) grayscale(0%);
+    transform: scale(1.05);
+  }
 }
 
 @media (max-width: 900px) {

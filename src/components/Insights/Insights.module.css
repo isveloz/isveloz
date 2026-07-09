@@ -21,7 +21,7 @@
   background: var(--bg-card);
   border: var(--glass-border);
   border-radius: 20px;
-  padding: 2.5rem;
+  padding: clamp(2rem, 3vw, 2.5rem);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
@@ -44,15 +44,17 @@
   pointer-events: none;
 }
 
-.card:hover::before {
-  opacity: 1;
-}
-
-.card:hover {
-  transform: translateY(-8px);
-  box-shadow: var(--neon-glow);
-  border: var(--glass-border-hover);
-  background: var(--bg-card-hover);
+@media (hover: hover) and (pointer: fine) {
+  .card:hover::before {
+    opacity: 1;
+  }
+  
+  .card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--neon-glow);
+    border: var(--glass-border-hover);
+    background: var(--bg-card-hover);
+  }
 }
 
 .tag {
@@ -97,8 +99,10 @@
   transition: gap 0.3s ease;
 }
 
-.card:hover .readMore {
-  gap: 0.8rem;
+@media (hover: hover) and (pointer: fine) {
+  .card:hover .readMore {
+    gap: 0.8rem;
+  }
 }
 
 /* Modal Styles */
