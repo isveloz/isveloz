@@ -53,7 +53,7 @@ export default function CoreValues() {
                 {val.icon}
               </div>
               <h3 className={styles.cardTitle}>{val.title}</h3>
-              <p className={styles.cardText}>{val.text}</p>
+              <p className={styles.cardText}>{val.description}</p>
             </motion.div>
           ))}
         </div>

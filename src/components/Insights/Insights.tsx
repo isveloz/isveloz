@@ -1,4 +1,4 @@
-import { useState, useRef, MouseEvent } from 'react';
+import { useState, useRef, type MouseEvent } from 'react';
 import { ArrowRight, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import {

@@ -1,4 +1,4 @@
-import { useRef, MouseEvent, useEffect, useState } from 'react';
+import { useRef, type MouseEvent, useEffect, useState } from 'react';
 import { motion, useMotionValue, useSpring } from 'framer-motion';
 import { Store, Coffee, BookOpen, Database, Building2, ChevronLeft, ChevronRight } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
@@ -184,7 +184,7 @@ export default function Story() {
           drag="x"
           dragConstraints={{ left: dragConstraints, right: 0 }}
           dragElastic={0.1}
-          onDrag={(e, info) => {
+          onDrag={(_e, info) => {
             x.set(x.get() + info.delta.x);
           }}
         >

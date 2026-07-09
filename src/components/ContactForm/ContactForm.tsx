@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { Send, CheckCircle, AlertCircle } from 'lucide-react';
+import { motion } from 'framer-motion';
+import { Send, CheckCircle } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import styles from './ContactForm.module.css';
 
